@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FOOD ORDERING WEBSITE</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:image" content=""> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="desciption" content="Food ordering">
+    <meta name="author" content="Roydon">
+    <meta name="keywords" content="Portfolio">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>"></link>
+
+    <style>
+        
+        * {
+            margin: 0%;
+            text-decoration: none;
+
+        }
+
+        #gta {
+            text-align: left;
+        }
+
+        #login {
+            text-align: right;
+
+        }
+
+        center a {
+            font-size: larger;
+        }
+
+        div {
+            background-repeat: no-repeat;
+            height: 400px;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
+
+        .header a {
+            color: white;
+            padding: 170px;
+        }
+
+        .menu td {
+            padding: 15px;
+
+        }
+
+        table {
+            padding: 10px;
+        }
+
+        h1 {
+            padding-left: 30px;
+            font-size: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        h2 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-family: monospace;
+        }
+
+        .search {
+            cursor: pointer;
+
+        }
+
+        .search input[type=text] {
+            height: 25px;
+            padding: 10px;
+            font-size: 17px;
+            border: none;
+            width: 500px;
+            border-radius: 15px;
+            background-color: white;
+
+        }
+
+        button {
+            width: 35px;
+            height: 35px;
+            background-color: rgb(241, 68, 68);
+            color: white;
+        }
+
+        span img {
+            width: 300px;
+            height: auto;
+            padding: 15px;
+        }
+
+        .locations p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration-color: blue;
+        }
+
+        .locations p span {
+            font-size: inherit;
+            font-weight: bold;
+        }
+
+        .loc tr td {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+		.design{
+		 background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+		 }
+
+        .design pre {
+            font-family: sans-serif;
+            padding: 4px;
+        }
+		
+      
+        table tr th {
+            padding: 30px;
+            padding-top: 2px;
+            padding-bottom: 0px;
+            justify-content: center;
+            font-family: sans-serif;
+			background: linear-gradient(to bottom right, #ccff99 0%, #66ffcc 92%);
+        }
+
+        /* td{
+            padding-left: 40px; 
+          } */
+        .highlight td {
+            border: 2px solid black;
+			border-radius:10px;
+			color:white;
+        }
+		.webbody{
+		 background: linear-gradient(to top left, #ccff66 0%, #66ffcc 92%);
+		 }
+
+        .webbody td {
+		background-color:cyan;
+            padding-left: 40px;
+        }
+
+        @media only screen and (max-width:1286px) {
+            .menubar a {
+                font-size: 23px;
+            }
+        }
+
+        @media only screen and (max-width:1219px) {
+            .menubar a {
+                font-size: 15px;
+            }
+        }
+
+        @media only screen and (max-width:186px) {
+            .menubar a {
+                font-size: 23px;
+            }
+        }
+
+        .menu {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(250, 40, 40);
+            animation-name: example;
+            animation-duration: 10s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: #33ccff;
+            }
+
+            25% {
+                background-color: rgb(243, 243, 17);
+            }
+
+            50% {
+                background-color: rgb(246, 55, 205);
+            }
+
+            100% {
+                background-color: rgb(118, 241, 118);
+            }
+        }
+
+        .menu img {
+            transition: transform .5s;
+        }
+
+        .menu img:hover {
+            transform: scale(1.1);
+        }
+
+        th img {
+            transition: transform .5s;
+        }
+
+       th img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+
+</head>
+<a id="top"></a>
+
+<body>
+    <div style="background-image: url(main.avif); object-fit: cover; flex-shrink: cover;" class="header"><br>
+
+        <a id="gta" href="about.html" style="color:white;font-family:Wacca;font-size: large;">ABOUT US</a>
+
+        <a id="AD" href="Ad.html" style="font-family:Baskerville;font-size: large;"> ADD RESTAURANT</a>
+        <a id="login" href="log.html" style="font-size: large; font-weight: bold; color:white;font-family:Baskerville;">LOGIN</a>
+        <br<br><br><br><br><br>
+
+
+            <h1 align="center" style="color: rgb(250, 247, 71);"><em> FOOD YUMMM</em></h1><br><br>
+            <h2 align="center" style="color: rgb(54, 223, 32); padding: 5px;">Discover the best food & drinks in
+                <b>Mangalore</b>
+            </h2><br>
+            <center style="padding-bottom: 5px;">
+                <table>
+                    <tr>
+                        <td>
+                            <form id="location" style="color: rgb(246, 191, 88); font-family: lato,sans-serif;">Location
+                                Below</form>
+                        </td>
+
+                        <td style="background-color: rgb(0, 0, 0); color:blueviolet;"><select name="plan" id="location"
+                                style="color:rgb(48, 59, 51);">
+                                <option value="Bangalore" id="location" selected>Bangalore</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="kolkata">Kolkata</option>
+                            </select>
+                            </select></td>
+                    </tr>
+                </table>
+            </center>
+
+            <form class="search" id="myinput">
+                <center><input type="text"
+                        id="myinput" placeholder="Search for restraurant, cuisine or a dish" name="search"
+                        style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);" />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </center>
+            </form>
+
+
+
+    </div>
+    <br>
+
+    <div class="menu">
+        <table>
+            <tr>
+                <td><a href="breakfast.html"><img src="IMAGES\1stfood.webp" style="border-radius: 10px;"></a></td>
+                <td><a href="lunch.html"><img src="IMAGES\2ndfood.webp" style="border-radius: 10px;"></a></td>
+                <td><a href="nightlife.html"><img src="IMAGES\3rdfood.webp" style="border-radius: 10px;"></a></td>
+            </tr>
+            <tr>
+                <td align="center"><a href="breakfast.html"
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: black; font-size: large;">BREAKFAST
+                </td>
+                <td align="center"><a href="lunch.html"
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: black; font-size: large;">LUNCH
+                </td>
+                <td align="center"><a href="nightlife.html"
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: black; font-size: large;">DINNER
+                </td>
+            </tr>
+        </table>
+
+
+    </div><br><br><br><br><br>
+
+    <div class="webbody">
+        <ul>
+            <h1 style="padding-top: 15px; padding-bottom: 15px;">BEST OF OUR COLLECTIONS</h1>
+            <p style="font-size: 20px; text-rendering: unset; padding-left: 30px;">Explore  lists of top
+                restaurants, cafes, pubs, and bars in Mangalore, based on trends</p>
+            <br>
+            <span>
+                <table>
+                    <tr>
+                        <th><img src="ImgCollec\sandwich.webp"></th>
+                        <th><img src="ImgCollec\cake.jpg"></th>
+                        <th><img src="ImgCollec\diet.jpg"></th>
+                    </tr>
+                    <tr>
+                        <td
+                            style="font-size: larger; font-weight: bold; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            Olive Street Food Cafe</td>
+                        <td
+                            style="font-size: larger; font-weight: bold;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            Waffee House</td>
+                        <td
+                            style="font-size: larger; font-weight: bold;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            Diet N Protein Meals</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre> Beverages, Burger, Ice Cream, Fast Food,
+ Sandwich, Shake Kodailbail, Mangalore.
+            </pre>
+                        </td>
+                        <td>
+                            <pre> Desserts, Beverages
+ Kankanady, Mangalore
+            </pre>
+                        </td>
+                        <td>
+                            <pre> Healthy Food, Italian, North Indian, Shake
+ Hampankatta, Mangalore
+            </pre>
+                        </td>
+                    </tr>
+                </table>
+            </span>
+        </ul>
+
+    </div><br><br><br><br><br>
+    <div class="locations">
+
+        <p align="center">Popular localities in and around <span>Mangalore</span></p><br><br>
+
+        <center>
+            <table class="loc" border="4" cellspacing="50px" width="100%" style="border-color:cadetblue;background-image:url(download.jfif);background-repeat:no-repeat;background-size:100% 100%;">
+
+                <tr class="highlight">
+                    <td>-----Electronic City. ></td>
+                    <td>-----Hosur Road. ></td>
+                    <td>-----Koramangala. ></td>
+
+
+                </tr>
+                <tr class="highlight">
+                    <td>-----Bannerghatta Road. ></td>
+                    <td>-----Marathahalli. ></td>
+                    <td>-----Manyata Tech Park. ></td>
+
+
+                </tr>
+                <tr class="highlight">
+                    <td>-----Hampankatta City. ></td>
+                    <td>-----Benson Town. ></td>
+                    <td>-----Richmond Town. ></td>
+
+
+                </tr>
+
+            </table>
+        </center>
+
+
+    </div><br>
+
+    <div class="design">
+        <h2 style="padding-left: 120px;">Explore other options for you here</h2><br><br>
+        <h3 style="padding-left: 120px;">Popular cuisines near me</h3><br>
+        <pre style="padding-left: 120px;">Arabian food near me.Bakery food near me . Beverages food near me . Biryani food near me . Burger food near me . Chinese food
+near me . Desserts food near me . Ice Cream food near me . Juices food near me Lebanese food near me.Bangalorean food near
+me . Mughlai food near me . North Indian food near me . Pizza food near me . Rolls food near me . Sandwich food near me . Seafood 
+food near me . Shake food near me . South Indian food near me . Street food near me</pre><br><br><br>
+        <br>
+        <h3 style="padding-left: 120px;">Popular restaurant types near me</h3><br>
+        <pre style="padding-left: 120px;">Bakeries near me.Bars near me.Beverage Shops near me.Cafés near me.Casual Dining near me.Dessert Parlors near me.Dhabas 
+near me.Food Courts near me.Food Trucks near me.Kiosks near me.Lounges near me.Microbreweries near me.Pubs near
+me.Quick Bites near me.Sweet Shops near me
+</pre><br><br><br><br>
+        <h3 style="padding-left:120px ;background: linear-gradient(to bottom left, #ffff00 0%, #00cc00 92%);">Web Page co-presented By</h3><br>
+        <table style="padding-left:100px;">
+            <tr>
+                <th><pre>Roydon
+204751
+                </pre></th>
+                <th><pre>Puneeth
+204714
+                </pre></th>
+            </tr>
+        </table>
+        <hr>
+        <center><a href="#top" style="font-weight: bold; color:rgb(55, 110, 110);">Go to top</a></center>
+        <hr><br>
+    </div>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</body>
+
+
+</html>
